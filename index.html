@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto educativo sobre ressonância magnética e ondas de rádio.">
+  <title>Ressonância Magnética & Ondas de Rádio</title>
+  <style>
+    :root{--navy:#10233f;--blue:#2463eb;--cyan:#dff6fa;--ink:#243247;--muted:#607086;--paper:#f5f8fc;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+    header{background:linear-gradient(120deg,#10233f,#155b83);color:white;padding:22px max(6vw,22px)}
+    nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;max-width:1100px;margin:auto}
+    .brand{font-weight:800;letter-spacing:.3px} nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0;flex-wrap:wrap}
+    nav a{color:#eaf6ff;text-decoration:none;font-size:.95rem} nav a:hover{text-decoration:underline}
+    .hero{max-width:1100px;margin:52px auto 28px;padding:0 22px 30px}
+    .eyebrow{color:#9ce8f1;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:bold}
+    h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.08;margin:12px 0}
+    .hero p{max-width:720px;color:#e0edf8;font-size:1.12rem}
+    .pill{display:inline-block;background:#dff6fa;color:#14516c;border-radius:99px;padding:6px 13px;font-size:.82rem;font-weight:bold}
+    main{max-width:1100px;margin:0 auto;padding:28px 22px 70px}
+    section{scroll-margin-top:20px;margin:28px 0}
+    h2{color:var(--navy);font-size:1.8rem;margin-bottom:8px}
+    h3{color:#174c70;margin:0 0 8px}
+    .intro{color:var(--muted);max-width:780px;margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:17px}
+    .card{background:white;border:1px solid #e1eaf2;border-radius:16px;padding:21px;box-shadow:0 8px 22px #1534540b}
+    .icon{font-size:1.8rem;margin-bottom:8px}
+    .highlight{background:linear-gradient(110deg,#e5f7fa,#edf3ff);border-left:5px solid #27a4bd;border-radius:12px;padding:18px 21px;margin:18px 0}
+    .steps{counter-reset:step;display:grid;gap:12px}
+    .step{background:white;border-radius:13px;padding:16px 18px;border:1px solid #e2eaf2}
+    .step strong{color:#145b81}
+    .tag{font-size:.78rem;background:#eef4ff;color:#315c9a;padding:4px 9px;border-radius:20px}
+    .faq details{background:white;padding:15px 18px;border-radius:12px;border:1px solid #e2eaf2;margin:10px 0}
+    summary{font-weight:bold;cursor:pointer;color:#174c70}
+    a{color:#1d5bc1} footer{background:#10233f;color:#dce8f4;padding:25px 22px;text-align:center}
+    footer a{color:#a8e6f0}
+    .small{font-size:.9rem;color:var(--muted)}
+    @media(max-width:560px){nav{align-items:flex-start}nav ul{gap:10px}.hero{margin-top:35px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav aria-label="Navegação principal">
+    <div class="brand">CIÊNCIA EM FOCO</div>
+    <ul>
+      <li><a href="#rm">Ressonância</a></li>
+      <li><a href="#ondas">Ondas de rádio</a></li>
+      <li><a href="#conexao">Como se conectam</a></li>
+      <li><a href="#seguranca">Segurança</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <span class="eyebrow">Física • Tecnologia • Saúde</span>
+    <h1>Ressonância magnética<br>& ondas de rádio</h1>
+    <p>Entenda como campos magnéticos e ondas eletromagnéticas ajudam a produzir imagens detalhadas do interior do corpo humano.</p>
+    <span class="pill">Material educativo</span>
+  </div>
+</header>
+<main>
+  <section id="rm">
+    <h2>O que é ressonância magnética?</h2>
+    <p class="intro">A ressonância magnética (RM) é um exame de diagnóstico por imagem que utiliza um campo magnético forte, pulsos de radiofrequência e um computador para criar imagens detalhadas de órgãos, músculos, articulações e outros tecidos.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">🧲</div><h3>Campo magnético</h3><p>O equipamento produz um campo magnético intenso que influencia o comportamento dos prótons de hidrogênio presentes principalmente na água do corpo.</p></article>
+      <article class="card"><div class="icon">📡</div><h3>Sinal de radiofrequência</h3><p>O aparelho envia pulsos de radiofrequência. Eles alteram temporariamente o estado dos prótons, que depois emitem sinais detectáveis.</p></article>
+      <article class="card"><div class="icon">🖥️</div><h3>Formação da imagem</h3><p>Antenas receptoras captam os sinais. Gradientes magnéticos ajudam a localizar sua origem, e o computador transforma os dados em imagens.</p></article>
+    </div>
+    <div class="highlight"><strong>Importante:</strong> a ressonância magnética não utiliza raios X nem radiação ionizante. Isso não significa que qualquer pessoa possa fazer o exame sem avaliação: objetos metálicos e alguns dispositivos implantados exigem cuidados especiais.</div>
+  </section>
+
+  <section id="ondas">
+    <h2>O que são ondas de rádio?</h2>
+    <p class="intro">Ondas de rádio são ondas eletromagnéticas. Elas podem se propagar pelo espaço e transportar energia e informação. São usadas em transmissões de rádio e televisão, telefonia, comunicação sem fio e também em exames de ressonância magnética.</p>
+    <div class="grid">
+      <article class="card"><h3>Características</h3><p>Não precisam de um meio material para se propagar. No vácuo, viajam à velocidade da luz e possuem frequência e comprimento de onda.</p></article>
+      <article class="card"><h3>Frequência</h3><p>É o número de oscilações por segundo, medido em hertz (Hz). Na RM, a frequência do pulso é ajustada ao campo magnético e ao núcleo observado.</p></article>
+      <article class="card"><h3>Energia</h3><p>As ondas de rádio são não ionizantes: não têm energia suficiente para arrancar elétrons dos átomos como fazem os raios X.</p></article>
+    </div>
+  </section>
+
+  <section id="conexao">
+    <h2>Como as ondas de rádio participam da ressonância?</h2>
+    <p class="intro">A palavra “ressonância” está relacionada à resposta de um sistema quando recebe energia em uma frequência adequada. Na RM, isso permite obter sinais dos prótons de hidrogênio.</p>
+    <div class="steps">
+      <div class="step"><strong>1. Alinhamento:</strong> o campo magnético principal organiza parcialmente os momentos magnéticos dos prótons de hidrogênio.</div>
+      <div class="step"><strong>2. Excitação:</strong> um pulso de radiofrequência, aplicado na frequência apropriada, altera o estado desses prótons.</div>
+      <div class="step"><strong>3. Relaxamento e sinal:</strong> após o pulso, os prótons retornam gradualmente ao equilíbrio e produzem sinais eletromagnéticos.</div>
+      <div class="step"><strong>4. Localização:</strong> gradientes do campo magnético codificam informações espaciais sobre os sinais recebidos.</div>
+      <div class="step"><strong>5. Imagem:</strong> o computador processa os dados e forma imagens em cortes ou em três dimensões.</div>
+    </div>
+    <div class="highlight"><strong>Em resumo:</strong> o ímã prepara o sistema, as ondas de rádio estimulam os prótons, as antenas recebem os sinais e o computador constrói a imagem.</div>
+  </section>
+
+  <section id="seguranca">
+    <h2>Cuidados e segurança</h2>
+    <div class="grid">
+      <article class="card"><h3>Antes do exame</h3><p>Informe à equipe sobre implantes, marcapasso, cirurgias, fragmentos metálicos ou possibilidade de gravidez. Siga as orientações do serviço de saúde.</p></article>
+      <article class="card"><h3>Objetos metálicos</h3><p>O campo magnético é muito forte. Por isso, objetos metálicos e equipamentos incompatíveis não devem entrar na sala de exame.</p></article>
+      <article class="card"><h3>Durante o exame</h3><p>O equipamento pode produzir ruídos altos. A equipe oferece proteção auditiva e mantém comunicação com a pessoa examinada.</p></article>
+    </div>
+    <p class="small">Este site tem finalidade escolar e informativa. Não substitui orientações de profissionais de saúde.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Curiosidades e dúvidas</h2>
+    <details><summary>A ressonância magnética usa radiação?</summary><p>Ela usa campos magnéticos e radiofrequência, que são não ionizantes. Não utiliza raios X.</p></details>
+    <details><summary>As ondas de rádio são visíveis?</summary><p>Não. São invisíveis aos olhos humanos, assim como outras partes do espectro eletromagnético.</p></details>
+    <details><summary>Por que o exame faz barulho?</summary><p>Parte dos ruídos é produzida pelas rápidas mudanças de corrente nas bobinas dos gradientes magnéticos durante a aquisição das imagens.</p></details>
+  </section>
+
+  <section>
+    <h2>Fontes para aprofundar</h2>
+    <ul>
+      <li><a href="https://www.radiologyinfo.org/en/info/mr" target="_blank" rel="noopener">RadiologyInfo — MRI Safety e funcionamento da RM</a></li>
+      <li><a href="https://www.fda.gov/radiation-emitting-products/medical-imaging/mri-magnetic-resonance-imaging" target="_blank" rel="noopener">FDA — MRI (Magnetic Resonance Imaging)</a></li>
+      <li><a href="https://www.nist.gov/how-do-you-measure-it/how-does-mri-machine-work" target="_blank" rel="noopener">NIST — How Does an MRI Machine Work?</a></li>
+    </ul>
+  </section>
+</main>
+<footer><p><strong>Ciência em Foco</strong> • Projeto educativo</p><p>Ressonância magnética e ondas de rádio</p></footer>
+</body>
+</html>
